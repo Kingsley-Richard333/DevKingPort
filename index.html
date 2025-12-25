@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevKing</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style2.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "on4h5FgPaL5TbG8AR",
+          });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <div class="container1"></div>
+    <video
+      class="back-vid"
+      loop
+      autoplay
+      muted
+      playsinline
+      src="/videos/galaxy.mp4"
+      type="video/mp4"
+    ></video>
+    <header>
+      <div class="left">
+        <div class="logo">DK</div>
+        <h1><span style="color: rgba(0, 179, 255, 0.9)">Dev</span>King</h1>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#pro">Projects</a></li>
+        </ul>
+        <div class="box-icons">
+          <a
+            href="https://www.linkedin.com/in/kingsley-richards-4217ab326"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://github.com/Kingsley-Richard333" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://wa.me/2349033879621" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="blackhole-box">
+      <video
+        loop
+        autoplay
+        muted
+        playsinline
+        src="/videos/blackhole.mp4"
+        type="video/mp4"
+      ></video>
+    </div>
+
+    <section class="hero">
+      <div class="hero-info scroll-fade">
+        <div class="hero-info-title">Front-end Developer Portfolio</div>
+        <h1 class="gradient">Focus</h1>
+        <h1>Passion</h1>
+        <h1 class="gradient">Creativity</h1>
+        <p>
+          Transforming ideas into immersive digital experiences through
+          cutting-edge technology, innovative design, and seamless user
+          interactions. Specializing in React, 3D web development, and creating
+          the future of digital interfaces
+        </p>
+        <button
+          id="about"
+          class="mebtn"
+          onclick="document.getElementById('tech').scrollIntoView({behavior: 'smooth'})"
+        >
+          Contact Me &rarr;
+        </button>
+      </div>
+
+      <div class="hero-vid-box scroll-fade">
+        <video
+          loop
+          autoplay
+          muted
+          plays-inline
+          src="/videos/hero-video.mp4"
+          type="video/mp4"
+        ></video>
+      </div>
+    </section>
+
+    <section class="info-cards">
+      <div class="orbital-bento scroll-fade">
+        <div class="bento-item box-hero">
+          <div class="word">
+            <h1>
+              Hi, I'm <br />
+              <span class="gradient">DevKing</span>
+            </h1>
+            <p>
+              A dedicated frontend developer specializing in creating
+              <em
+                >responsive, visually appealing and performance-driven
+                websites</em
+              >
+              that deliver exceptional user experiences.
+            </p>
+          </div>
+        </div>
+
+        <div class="bento-item box-portrait">
+          <div class="container">
+            <div class="glow-circle"></div>
+            <div class="glow-ring"></div>
+            <div class="portrait-container">
+              <div class="edge-glow"></div>
+              <img
+                src="/img/DevKing.png"
+                alt="Portrait"
+                class="portrait"
+                id="portraitImage"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="bento-item box-stat">
+          <div class="stat-content">
+            <h3>Years of Experience</h3>
+            <p class="stat-number">3+</p>
+            <p>Focused on Real-world Collaborations.</p>
+          </div>
+        </div>
+
+        <div id="skill" class="bento-item box-tech">
+          <h3>Core Stack</h3>
+          <div class="mini-tech-icons">
+            <span>React</span>
+            <span>Next.js</span>
+            <span>CSS3</span>
+            <span>JS</span>
+          </div>
+          <button
+            class="bento-btn"
+            onclick="document.getElementById('tech1').scrollIntoView({behavior: 'smooth'})"
+          >
+            Technical Expertise &rarr;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid-container">
+      <div class="grid-item anchor-box" id="box1">
+        <div class="content scroll-fade">
+          <h2>01. Technical Expertise</h2>
+          <p>
+            Engineered for Excellence: I leverage a diverse, modern
+            stack—including frameworks like React/Next.js and Node.js—to
+            architect and deploy robust, scalable, and high-performance web
+            solutions. My development methodology mandates clean, maintainable
+            code, responsive design principles, and rigorous testing to
+            guarantee project quality and long-term reliability.
+          </p>
+          <a href="#contact">Let's Explore</a>
+        </div>
+      </div>
+
+      <div class="grid-item connector-box" id="box2">
+        <div class="content scroll-fade">
+          <h2>02. Global Collaboration</h2>
+          <p>
+            Distributed Team Leadership: Proficient in working across global
+            time zones and collaborating with diverse, distributed teams. I
+            prioritize proactive, clear communication and utilize modern
+            collaboration tools to maintain consistent velocity, transparency,
+            and timely delivery for clients worldwide. Distance is converted
+            into an asset for round-the-clock progress.
+          </p>
+          <a id="pro" href="#contact">Let's collaborate</a>
+        </div>
+      </div>
+
+      <div class="grid-item foundation-box" id="box3">
+        <div class="content scroll-fade">
+          <h2>03. Passion for Innovation</h2>
+          <p>
+            Driven by Impact & Innovation: My passion lies in translating
+            real-world challenges into meaningful digital experiences. I treat
+            programming as a core creative discipline, constantly exploring
+            emerging technologies to build smarter, more impactful, and
+            user-centered solutions. This drive fuels a commitment to delivering
+            clean, optimized, and future-proof code that genuinely moves the
+            needle.
+          </p>
+          <a href="#contact">Let's Create Wonders</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="background-effect"></div>
+
+    <div class="main-content">
+      <div id="project" class="showcase-header">
+        <h2>Featured Projects</h2>
+        <p>
+          A collection of diverse case studies demonstrating proficiency in
+          front-end development and creative problem-solving.
+        </p>
+      </div>
+
+      <section class="layered-grid-wrapper" id="layeredGridContainer">
+        <article class="project-card card-a">
+          <div class="project-image-slot scroll-fade">
+            <img src="/img/sicklecare.png" />
+          </div>
+          <div class="project-details scroll-fade">
+            <h2>SickleCare</h2>
+            <br />
+            <h4>Comprehensive Health Management Platform</h4>
+            <p>
+              Engineered a Next.js-based healthcare platform designed to empower
+              sickle cell patients. The system includes a Symptom Tracker, a
+              Geolocated Provider Locator, and an Intuitive Data Dashboard to
+              facilitate proactive health management, ensuring a smooth,
+              reliable user experience.
+            </p>
+            <!-- <a href="#" class="view-project-btn">View Project &rarr;</a> -->
+          </div>
+        </article>
+
+        <article class="project-card card-b">
+          <div class="project-image-slot scroll-fade">
+            <img src="/img/loopstudio.png" alt="Website Project B Screenshot" />
+          </div>
+          <div class="project-details scroll-fade">
+            <h2>LoopStudio Landing Page</h2>
+            <p>
+              Developed a high-fidelity, visually compelling landing page
+              emphasizing modern brand identity and user engagement. The project
+              features pixel-perfect responsiveness, advanced JavaScript-driven
+              smooth scroll, and interactive hover effects, ensuring optimal
+              performance through efficient, lightweight code.
+            </p>
+           <!--  <a href="#" class="view-project-btn">View Project &rarr;</a> -->
+          </div>
+        </article>
+
+        <article class="project-card card-c">
+          <div class="project-image-slot scroll-fade">
+            <img src="/img/fylo.png" alt="Website Project C Screenshot" />
+          </div>
+          <div class="project-details scroll-fade">
+            <h2>Fylo Landing Page</h2>
+            <br />
+            <h4>Fylo Secure File Storage & Management Platform</h4>
+            <p>
+              Built a modern, security-focused web platform providing seamless,
+              cross-device access to digital files. Features a clean, minimalist
+              UI designed for intuitive navigation, secure storage simulation,
+              and guaranteed fast, reliable file access on any device.
+            </p>
+            <!-- <a href="#" class="view-project-btn">View Project &rarr;</a> -->
+          </div>
+        </article>
+
+        <article class="project-card card-d">
+          <div class="project-image-slot scroll-fade">
+            <img src="/img/clipboard.png" alt="Website Project D Screenshot" />
+          </div>
+          <div id="tech1" class="project-details scroll-fade">
+            <h2>Clipboard Landing Page</h2>
+            <p>
+              Designed and deployed a marketing landing page for a cloud-based
+              productivity tool. The page focuses on persuasive content delivery
+              and features strong visual hierarchy and an optimized CTA flow to
+              drive software adoption. Implemented clean, fully responsive
+              front-end code for universal device compatibility
+            </p>
+            <!-- <a href="#" class="view-project-btn">View Project &rarr;</a> -->
+          </div>
+        </article>
+      </section>
+
+      <div class="dynamic-background"></div>
+    </div>
+
+    <div id="tech" class="end scroll-fade">
+      <div class="item google">
+        <img height="70px" src="/img/html icon.png" alt="" />
+      </div>
+      <div class="item ibm">
+        <img height="70px" src="/img/css icon.png" alt="" />
+      </div>
+      <div class="item vector">
+        <img height="70px" src="/img/js icon.png" alt="" />
+      </div>
+      <div class="item micro">
+        <img height="70px" src="/img/13.png" alt="" />
+      </div>
+      <div class="item harw">
+        <img height="70px" src="/img/7.png" alt="" />
+      </div>
+      <div class="item vector1">
+        <img height="70px" src="/img/11.png" alt="" />
+      </div>
+      <div class="item vector2">
+        <img height="70px" src="/img/bootstrap-5-1.svg" alt="" />
+      </div>
+      <div class="item vector3">
+        <img height="70px" src="/img/react-2.svg" alt="" />
+      </div>
+      <div class="item vector4">
+        <img height="70px" src="/img/wordpress.png" alt="" />
+      </div>
+    </div>
+
+    <section id="contact" class="connect">
+      <h1>Let's Connect</h1>
+      <div class="connect-box">
+        <div class="connect1 scroll-fade">
+          <div class="in1">
+            <h2>Get In Touch</h2>
+            <p>
+              Ready to bring your vision to life? Let's collaborate on creating
+              something extraordinary. I'm always excited to work on innovative
+              projects that push creative boundaries.
+            </p>
+          </div>
+          <div class="in2">
+            <h2>Follow Me</h2>
+            <div class="follow-icon">
+              <a
+                href="https://www.linkedin.com/in/kingsley-richards-4217ab326"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/Kingsley-Richard333" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://wa.me/2349033879621" target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="in3">
+            <h2>Contact Info</h2>
+            <div class="con-info">
+              <a href="mailto:youremail@example.com"
+                ><i class="fa-solid fa-envelope"></i>
+                kingsleykings016@gmail.com</a
+              >
+              <a href="tel:+234XXXXXXXXXX"
+                ><i class="fa-solid fa-phone"></i> +2349033879621</a
+              >
+              <a
+                href="https://www.google.com/maps/place/Your+Location"
+                target="_blank"
+                ><i class="fa-solid fa-location-dot"></i> Ibadan, Nigeria</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="connect2 scroll-fade">
+          <div class="contact-container">
+            <form class="contact-form">
+              <div class="input-row">
+                <div class="input-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Project inquiry" />
+              </div>
+
+              <div class="input-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Tell me about your project..."
+                ></textarea>
+              </div>
+
+              <button type="submit" onclick="sendMail()" class="send-btn">
+                Send Message <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="first scroll-fade">
+        <div class="left">
+          <div class="logo">DK</div>
+          <h1><span style="color: rgba(0, 179, 255, 0.9)">Dev</span>King</h1>
+        </div>
+        <p>
+          Creating immersive digital experiences that bridge imagination and
+          reality through cutting-edge technology and artistic vision.
+        </p>
+      </div>
+
+      <div class="second scroll-fade">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="third scroll-fade">
+        <h2>Get In Touch</h2>
+        <div class="contact-icons">
+          <a href="mailto:youremail@example.com"
+            ><i class="fa-solid fa-envelope"></i> kingsleykings016@gmail.com</a
+          >
+          <a href="tel:+234XXXXXXXXXX"
+            ><i class="fa-solid fa-phone"></i> +2349033879621</a
+          >
+          <a
+            href="https://www.google.com/maps/place/Your+Location"
+            target="_blank"
+            ><i class="fa-solid fa-location-dot"></i> Ibadan, Nigeria</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function handleBlackholeOpacity() {
+        const blackhole = document.querySelector('.blackhole-box');
+        const scrollPosition = window.scrollY;
+        const fadeStart = 100;
+        const fadeDistance = 500;
+
+        let opacity = 1 - (scrollPosition - fadeStart) / fadeDistance;
+        opacity = Math.max(0.2, Math.min(1, opacity));
+
+        if (blackhole) {
+          blackhole.style.opacity = opacity;
+        }
+      }
+
+      window.addEventListener('scroll', handleBlackholeOpacity);
+      handleBlackholeOpacity();
+
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      hamburger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+      });
+
+      const menuLinks = mobileMenu.querySelectorAll('a');
+      menuLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        if (
+          mobileMenu.classList.contains('active') &&
+          !mobileMenu.contains(e.target) &&
+          !hamburger.contains(e.target)
+        ) {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+        }
+      });
+
+      mobileMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
+
+      function handleScrollFade() {
+        const elements = document.querySelectorAll('.scroll-fade');
+        const windowHeight = window.innerHeight;
+
+        elements.forEach((element) => {
+          const rect = element.getBoundingClientRect();
+          const elementTop = rect.top;
+          const elementBottom = rect.bottom;
+
+          const isInViewport =
+            elementTop < windowHeight * 0.85 && elementBottom > 0;
+
+          if (isInViewport) {
+            const distanceFromBottom = windowHeight - elementTop;
+            const fadeZone = windowHeight * 0.3;
+
+            let opacity = Math.min(distanceFromBottom / fadeZone, 1);
+            opacity = Math.max(0, opacity);
+
+            element.style.opacity = opacity;
+            element.style.transform = `scale(${
+              0.95 + opacity * 0.05
+            }) translateY(${(1 - opacity) * 20}px)`;
+
+            if (opacity > 0.8) {
+              element.classList.add('visible');
+            }
+          } else if (elementTop > windowHeight) {
+            element.style.opacity = 0;
+            element.style.transform = 'scale(0.95) translateY(20px)';
+            element.classList.remove('visible');
+          } else {
+            element.style.opacity = 1;
+            element.style.transform = 'scale(1) translateY(0)';
+            element.classList.add('visible');
+          }
+        });
+      }
+
+      handleScrollFade();
+      window.addEventListener('scroll', handleScrollFade);
+
+      function handleHeaderBrightness() {
+        const header = document.querySelector('header');
+        const headerUl = document.querySelector('header ul');
+        const scrollPosition = window.scrollY;
+        const fadeStart = 100;
+        const fadeDistance = 500;
+
+        let brightness = (scrollPosition - fadeStart) / fadeDistance;
+        brightness = Math.max(0, Math.min(1, brightness));
+
+        const baseOpacity = 0.2;
+        const maxOpacity = 0.6;
+        const finalOpacity =
+          baseOpacity + brightness * (maxOpacity - baseOpacity);
+
+        header.style.backgroundColor = `rgba(120, 128, 230 0.6, ${finalOpacity})`;
+        header.style.boxShadow = `0 0 ${
+          20 + brightness * 30
+        }px  rgba(208, 225, 244, 0.466), ${0.4 + brightness * 0.4})`;
+
+        if (headerUl) {
+          const ulBaseOpacity = 0.5;
+          const ulMaxOpacity = 0.65;
+          const ulFinalOpacity =
+            ulBaseOpacity + brightness * (ulMaxOpacity - ulBaseOpacity);
+
+          headerUl.style.backgroundColor = `rgba(0, 0, 69, ${ulFinalOpacity})`;
+        }
+      }
+
+      window.addEventListener('scroll', function () {
+        handleBlackholeOpacity();
+        handleScrollFade();
+        handleHeaderBrightness();
+      });
+
+      handleHeaderBrightness();
+    </script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
