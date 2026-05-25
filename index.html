@@ -107,14 +107,10 @@
       </div>
 
       <div class="hero-vid-box scroll-fade">
-        <video
-          loop
-          autoplay
-          muted
-          plays-inline
-          src="/videos/hero-video.mp4"
-          type="video/mp4"
-        ></video>
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="videos/compressed/hero-video.mp4" type="video/mp4">
+          <source src="videos/compressed/hero-video.webm" type="video/webm">
+        </video>
       </div>
     </section>
 
