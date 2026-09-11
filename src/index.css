@@ -645,7 +645,7 @@ header ul a:hover {
   justify-content: center;
   align-items: center;
   transform: rotateY(-8deg) translateZ(60px);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .box-stat {
@@ -760,16 +760,16 @@ header ul a:hover {
 
 .glow-circle {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   background: radial-gradient(
     circle,
-    rgba(42, 70, 255, 0.4) 0%,
-    rgba(96, 112, 253, 0.3) 20%,
-    rgba(126, 66, 167, 0.2) 40%,
-    rgba(0, 139, 170, 0.1) 60%,
-    transparent 80%
+    rgba(42, 70, 255, 0.42) 0%,
+    rgba(96, 112, 253, 0.35) 18%,
+    rgba(126, 66, 167, 0.22) 38%,
+    rgba(0, 139, 170, 0.12) 60%,
+    transparent 82%
   );
   box-shadow: 0 0 60px rgba(42, 70, 255, 0.5),
     0 0 100px rgba(96, 112, 253, 0.4),
@@ -779,8 +779,8 @@ header ul a:hover {
 
 .glow-ring {
   position: absolute;
-  width: 340px;
-  height: 340px;
+  width: 380px;
+  height: 380px;
   border-radius: 50%;
   border: 3px solid transparent;
   background: linear-gradient(
@@ -807,19 +807,27 @@ header ul a:hover {
   position: relative;
   z-index: 10;
   width: 300px;
-  height: 260px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgba(8, 12, 24, 0.35);
+  box-shadow: inset 0 0 0 2px rgba(46, 160, 255, 0.35),
+    0 0 30px rgba(42, 70, 255, 0.7);
   filter: drop-shadow(0 0 30px rgba(42, 70, 255, 0.7));
 }
 
 .portrait {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
   border-radius: 50%;
   position: relative;
+  transform: scale(1.02);
+  background: rgba(11, 15, 25, 0.2);
   box-shadow: 0 0 40px rgba(0, 153, 255, 0.5),
     inset 0 0 20px rgba(96, 112, 253, 0.3);
   border: 2px solid rgba(0, 139, 170, 0.4);
@@ -827,10 +835,7 @@ header ul a:hover {
 
 .edge-glow {
   position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
+  inset: -12px;
   border-radius: 50%;
   background: linear-gradient(
     135deg,
@@ -841,7 +846,7 @@ header ul a:hover {
     rgba(42, 70, 255, 0.6) 80%,
     rgba(0, 153, 255, 0.6) 100%
   );
-  filter: blur(15px);
+  filter: blur(18px);
   z-index: -1;
   animation: edgePulse 2.3s ease-in-out infinite alternate;
   mix-blend-mode: lighten;
@@ -891,12 +896,16 @@ header ul a:hover {
     grid-column: span 1 !important;
   }
   .portrait-container {
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
   }
-  .glow-circle, .glow-ring {
-    width: 270px;
-    height: 270px;
+  .glow-circle {
+    width: 300px;
+    height: 300px;
+  }
+  .glow-ring {
+    width: 320px;
+    height: 320px;
   }
 }
 
@@ -912,12 +921,16 @@ header ul a:hover {
     font-size: 2.2rem;
   }
   .portrait-container {
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
   }
-  .glow-circle, .glow-ring {
-    width: 220px;
-    height: 220px;
+  .glow-circle {
+    width: 240px;
+    height: 240px;
+  }
+  .glow-ring {
+    width: 260px;
+    height: 260px;
   }
 }
 
@@ -1120,7 +1133,7 @@ header ul a:hover {
   border-radius: 18px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: visible;
 
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(var(--blur-intensity));
@@ -1517,7 +1530,7 @@ header ul a:hover {
   padding: 36px;
   color: #fff;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Offline, zero-latency Stardust pattern */
